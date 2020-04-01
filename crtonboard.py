@@ -19,11 +19,13 @@ from shutil import copy2
 # win_root_path is the root directory of your crt sessions folder.  This
 # is where the new files will be created.
 root_path = ''
-win_root_path = r'C:/Users/garrettmunson/Documents/Sessions/'
-macos_root_path = r'/Users/gmunson-local/Documents/Sessions/Sessions'
+# EDIT win_root_path OR macos_root_path  VARIABLE WITH YOUR ROOT PATH
+win_root_path = r'C:/Users/%USERPROFILE%/Documents/Sessions/'
+macos_root_path = r'/Users/%USERPROFILE%/Documents/Sessions/Sessions'
+
 system_os = ''
 src_ini_file = "crtblank.ini"
-src_csv = 'birmingham_crtsource.csv'
+src_csv = 'crtsource.csv'
 src_is_set = False
 client = None
 client_root_path = None
