@@ -60,10 +60,11 @@ def get_system_os():
 def set_root_dir():
     # set the root path based on OS
     global win_root_path
+    global macos_root_path
     global root_path
     system_os = get_system_os()
     if system_os == 'Darwin':
-        root_path = '/Users/gmunson-local/Documents/Sessions/'
+        root_path = macos_root_path
     else:
         root_path = win_root_path
     str1 = 'OS Detected:'
