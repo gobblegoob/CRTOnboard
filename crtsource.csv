@@ -1,15 +1,10 @@
 HOSTNAME,HOST_IP,USERNAME,BUILDING,IDF
-SHANG-LAB-5508X-1,10.50.240.63,admin,Shanghai Lab,
-SHANG-LAB-5508X-2,10.50.240.64,admin,Shanghai Lab,
-SHELBY-5508X-1,192.168.200.63,admin,"Selby, UK",
-SHELBY-5508X-2,192.168.200.64,admin,"Selby, UK",
-LYON-5516X-1,192.168.4.60,admin,"Lyon, FR",
-LYON-5516-2,192.168.4.61,admin,"Lyon, FR",
-GER-5508X-1,10.90.240.63,admin,Germany,
-GER-5508X-2,10.90.240.64,admin,Germany,
-SHANG-OFF-5508X-1,10.55.240.63,admin,Shanghai Office,
-SHANG-OFF-5508X-2,10.55.240.64,admin,Shanghai Office,
-Beijing-1,10.130.240.63,admin,Beijing,
-Beijing-2,10.130.240.64,admin,Beijing,
-CH-FP2130-1,10.1.240.63,admin,"Chicago, IL",
-CH-FP2130-2,10.1.240.64,admin,"Chicago, IL",
+Switch-1,10.250.250.1,admin,Building_1,MDF
+Switch-2,10.250.250.2,admin,Building_1,IDF1
+Switch-3,10.250.250.3,admin,Building_1,IDF2
+Switch-4,10.250.250.4,admin,Building_2,MDF
+Switch-5,10.250.250.5,admin,Building_2,IDF1
+Switch-6,10.250.250.6,admin,Building_2,IDF2
+Switch-7,10.250.250.7,admin,Building_3,MDF
+Switch-8,10.250.250.8,admin,Building_3,IDF1
+Switch-9,10.250.250.9,admin,Building_3,IDF2
