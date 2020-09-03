@@ -21,7 +21,7 @@ from shutil import copy2
 root_path = ''
 # EDIT win_root_path OR macos_root_path  VARIABLE WITH YOUR ROOT PATH
 win_root_path = r'C:/Users/%USERPROFILE%/Documents/Sessions/'
-macos_root_path = r'/Users/gmunson-local/Documents/Sessions/Sessions/'
+macos_root_path = r'/Users/%USERNAME/Documents/Sessions/Sessions/'
 
 system_os = ''
 src_ini_file = "crtblank.ini"
