@@ -21,7 +21,7 @@ from shutil import copy2
 root_path = ''
 # EDIT win_root_path OR macos_root_path  VARIABLE WITH YOUR ROOT PATH
 win_root_path = r'C:/Users/%USERPROFILE%/Documents/Sessions/'
-macos_root_path = r'/Users/%USERPROFILE%/Documents/Sessions/Sessions'
+macos_root_path = r'/Users/gmunson-local/Documents/Sessions/Sessions/'
 
 system_os = ''
 src_ini_file = "crtblank.ini"
@@ -33,7 +33,7 @@ client_building_path = None
 client_closet_path = None
 prog_root_path = None
 # This is the header structure of the source csv file.
-file_vars = '[HOSTNAME]', '[HOST_IP]', '[USERNAME]', '[BUILDING]', '[IDF]'
+file_vars = '[HOSTNAME]', '[HOST_IP]', '[USERNAME]', '[BUILDING]', '[IDF]', '[LOG_DIR]'
 
 
 def initialize():
@@ -150,11 +150,13 @@ def create_crt_file(row):
         dest = dest+'/'+building+'/'
         create_dir(building)
         os.chdir(dest)
+        create_dir('logs')
 
     if idf != '':
-        dest = dest+'/'+idf+'/'
+        dest = dest+idf+'/'
         create_dir(idf)
         os.chdir(dest)
+        create_dir('logs')
 
     print("Destination directory : "+dest)
     sf = prog_root_path + '/' + src_ini_file
@@ -176,12 +178,16 @@ def edit_file(row, dest, fn):
     global file_vars
     src_search_text = file_vars
     replacement_text = None
+    log_dir = os.getcwd() + '/logs/'
     try:
         os.chdir(dest)
         for i in range(len(src_search_text)):
             text_to_search = src_search_text[i]
             if i < len(row):
                 replacement_text = row[i]
+
+            if i == len(row):
+                replacement_text = log_dir
 
             with fileinput.FileInput(nfn, inplace=True) as file:
                 for line in file:
