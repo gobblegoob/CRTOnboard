@@ -1,10 +1,26 @@
 HOSTNAME,HOST_IP,USERNAME,BUILDING,IDF
-Switch-1,10.250.250.1,admin,Building_1,MDF
-Switch-2,10.250.250.2,admin,Building_1,IDF1
-Switch-3,10.250.250.3,admin,Building_1,IDF2
-Switch-4,10.250.250.4,admin,Building_2,MDF
-Switch-5,10.250.250.5,admin,Building_2,IDF1
-Switch-6,10.250.250.6,admin,Building_2,IDF2
-Switch-7,10.250.250.7,admin,Building_3,MDF
-Switch-8,10.250.250.8,admin,Building_3,IDF1
-Switch-9,10.250.250.9,admin,Building_3,IDF2
+wosb3750p01,10.17.236.52,presidio,Osborne,MDF
+GOSB2911001,10.17.123.2,presidio,Osborne,MDF
+GOSB2911001,10.17.124.2,presidio,Venice,MDF
+wven3750p01,10.17.236.56,presidio,Venice,MDF
+GADA2911001,10.17.115.2,presidio,Adams,MDF
+wada3750p01,10.17.236.20,presidio,Adams,MDF
+WHAN2911001,10.17.118.2,presidio,Hancock,MDF
+whan3750p01,10.17.236.32,presidio,Hancock,MDF
+GONT2911001,10.17.122.2,presidio,Ontario,MDF
+wont3750p01,10.17.236.48,presidio,Ontario,MDF
+GMIL2911001,10.17.120.2,presidio,Mills,MDF
+wmil3750p01,10.17.236.40,presidio,Mills,MDF
+GJAC2911001,10.17.114.2,presidio,Jackson,MDF
+wjac3750p01,10.17.236.16,presidio,Jackson,MDF
+GSTL2911001,10.17.127.2,presidio,Strobel Field,MDF
+WSTR3550P01,10.17.236.68,presidio,Strobel Field,MDF
+gshs281101,10.17.112.4,presidio,High School,MDF
+wshs6509p00,10.17.236.100,presidio,High School,MDF
+wshs3750p01-CAF,10.17.236.101,presidio,High School,Café
+wshs3750p02-2NORTH,10.17.236.102,presidio,High School,2North
+wshs3750p03-SUPCTR,10.17.236.103,presidio,High School,Supctr
+wshs3750p04-1SOUTH,10.17.236.104,presidio,High School,1South
+wshs3750p05-RM412,10.17.236.105,presidio,High School,RM412
+wshs3750p06-LIB,10.17.236.106,presidio,High School,Library
+wshs3750p07-RM122,10.17.236.107,presidio,High School,RM122
