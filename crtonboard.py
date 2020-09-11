@@ -132,7 +132,7 @@ def get_source_file(srcfile):
                 create_crt_file(row)
                 # print(row)
     except:
-        print('\n\nThere was a problem importing the source CSV.  Check file formatting or illegal non UTF-8 characters')
+        print('\n\nThere was a problem importing the source CSV.  \nCheck file formatting or illegal non UTF-8 characters')
         print('\nExiting ')
         quit()
 
