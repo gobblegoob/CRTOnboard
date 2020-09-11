@@ -21,7 +21,7 @@ from shutil import copy2
 root_path = ''
 # EDIT win_root_path OR macos_root_path  VARIABLE WITH YOUR ROOT PATH
 win_root_path = r'C:/Users/%USERPROFILE%/Documents/Sessions/'
-macos_root_path = r'/Users/%USERNAME/Documents/Sessions/Sessions/'
+macos_root_path = r'/Users/%USER%/Documents/Sessions/'
 
 system_os = ''
 src_ini_file = "crtblank.ini"
@@ -121,15 +121,20 @@ def set_source_file():
 
 # Sends info to create_crt_file() in order to create the .ini files
 def get_source_file(srcfile):
-    with open(srcfile) as csvfile:
-        csvreader = csv.reader(csvfile, delimiter=',')
+    try:
+        with open(srcfile) as csvfile:
+            csvreader = csv.reader(csvfile, delimiter=',')
 
-        # skip the header
-        next(csvreader)
+            # skip the header
+            next(csvreader)
 
-        for row in csvreader:
-            create_crt_file(row)
-            # print(row)
+            for row in csvreader:
+                create_crt_file(row)
+                # print(row)
+    except:
+        print('\n\nThere was a problem importing the source CSV.  Check file formatting or illegal non UTF-8 characters')
+        print('\nExiting ')
+        quit()
 
 
 # Takes each row from get_source_file() and creates hte new .ini file.  Passes output to edit_file()
