@@ -19,11 +19,10 @@ import platform
 from shutil import copy2
 import argparse
 
-# from CRTOnboard.crtonboard import create_sessions
-# C:\Users\gamunson\Documents\PythonProjects\CRTOnboard\Sessions\
+
 class CRT():
     def __init__(self):
-        self.root_path = r'C:\\Users\\gamunson\Documents\\PythonProjects\\CRTOnboard\Sessions\\' # UPDATE THIS TO REFLECT YOUR SESSIONS FOLDER PATH
+        self.root_path = r'C:\\%USERPROFILE%\\Documents\\Sessions\\' # UPDATE THIS TO REFLECT YOUR SESSIONS FOLDER PATH
         self.system_os = platform.system()
         self.src_csv = 'crtsource.csv'
         self.src_ini_file = 'crtblank.ini'
