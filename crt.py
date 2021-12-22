@@ -232,9 +232,6 @@ if __name__ == "__main__":
     if crt.client_name is None:
         crt.read_client_name()
 
-    # FOR TESTING ONLY
-    crt.root_path = 'C:/Users/gamunson/Documents/PythonProjects/CRTOnboard/Sessions'
-
     # Execute the task
     create_sessions(crt.src_csv)
   
